@@ -1,0 +1,16 @@
+[package]
+name = "visifit-contract"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["lib", "cdylib"]
+doctest = false
+
+[dependencies]
+# Mengambil soroban-sdk dari Cargo.toml luar (workspace)
+soroban-sdk = { workspace = true }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }

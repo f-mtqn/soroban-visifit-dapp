@@ -1,0 +1,20 @@
+[workspace]
+resolver = "2"
+members = [
+    "contracts/*",
+]
+
+# Mendefinisikan versi library untuk digunakan bersama oleh semua kontrak
+[workspace.dependencies]
+soroban-sdk = "20.0.0" 
+
+# Pengaturan kompilasi agar ukuran file .wasm menjadi sekecil mungkin (wajib untuk blockchain)
+[profile.release]
+opt-level = "z"
+overflow-checks = true
+debug = 0
+strip = "symbols"
+debug-assertions = false
+panic = "abort"
+codegen-units = 1
+lto = true

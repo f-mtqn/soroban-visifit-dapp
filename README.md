@@ -40,3 +40,9 @@ This repository follows the recommended Soroban workspace structure:
 │       └── Cargo.toml     # Contract-specific dependencies
 ├── Cargo.toml             # Workspace dependency manager
 └── README.md              # Project documentation
+
+## 🌐 Live Deployment
+This smart contract has been successfully deployed to the Stellar Testnet.
+* **Network:** Stellar Testnet
+* **Contract ID:** `CDM4LUNEYEZMKJOYFXHFLYF6HFXK2AUMO6H6MA4HDX2WW7Z6WC7P6B76`
+* **Explorer Link:** [View on Stellar Expert](https://stellar.expert/explorer/testnet/contract/CDM4LUNEYEZMKJOYFXHFLYF6HFXK2AUMO6H6MA4HDX2WW7Z6WC7P6B76)
